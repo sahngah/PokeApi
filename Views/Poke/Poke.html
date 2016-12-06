@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+         <link rel="stylesheet" href="Content/style.css">
+         <title>Hello</title>
+    </head>
+    <body>
+        @ViewBag.img
+        <h1>Name: @ViewBag.name</h1>
+        <h1>Height: @ViewBag.height</h1>
+        <h1>Weight: @ViewBag.weight</h1>
+        <h1>Primary Type: @ViewBag.pritype</h1>
+        @If.Context.ViewBag.sectype
+        <h1>Secondary Type: @ViewBag.sectype</h1>
+        @EndIf
+    </body>
+</html>
